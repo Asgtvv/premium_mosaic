@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Mosaic | Стеклянная мозаика премиум-класса</title>
+    <meta name="description"
+        content="Производитель высококачественной стеклянной мозаики. Более 300 видов сочетаний цветовых гамм и оттенков.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="логотип/FullLogo_Transparent_NoBuffer.png" alt="Premium Mosaic">
+            </a>
+            <div class="nav-links">
+                <a href="#home" data-i18n="nav_home">Главная</a>
+                <a href="#catalog" data-i18n="nav_catalog">Каталог</a>
+                <a href="#about" data-i18n="nav_about">О производстве</a>
+                <a href="#" id="nav-contacts-btn" data-i18n="nav_contacts">Контакты</a>
+            </div>
+            <div class="nav-actions">
+                <div class="lang-switch" id="lang-switch" style="user-select: none;">UZ</div>
+                <a href="#" id="order-btn" class="btn btn-primary" data-i18n="nav_order">Заказать образец</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="subtitle">Premium Mosaic</span>
+                <h1 data-i18n="hero_h1">Основа,<br><em>на которую можно рассчитывать</em></h1>
+                <p data-i18n="hero_p">Стеклянная мозаика, созданная выдерживать любые нагрузки. Она абсолютно не боится
+                    жара, сурового холода и резких перепадов температур, сохраняя свой безупречный вид на долгие годы.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#catalog" class="btn btn-primary" data-i18n="hero_btn_catalog">Смотреть каталог</a>
+                    <a href="#" id="download-pdf-btn" class="btn btn-outline" data-i18n="hero_btn_pdf">Скачать PDF</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">318+</span>
+                        <span class="stat-text" data-i18n="stat_colors">Цветовых решений</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">&lt;0.1%</span>
+                        <span class="stat-text" data-i18n="stat_water">Водопоглощение</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">100+</span>
+                        <span class="stat-text" data-i18n="stat_frost">Циклов морозостойкости</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <video autoplay muted playsinline>
+                        <source src="vid1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3 data-i18n="feat_1_title">Водонепроницаемость</h3>
+                <p data-i18n="feat_1_desc">Коэффициент водопоглощения меньше 0.1%. Идеально для бассейнов и хамамов.</p>
+            </div>
+            <div class="feature-card">
+                <h3 data-i18n="feat_2_title">Морозостойкость</h3>
+                <p data-i18n="feat_2_desc">Выдерживает не менее 100 циклов перехода от минусовых к плюсовым температурам
+                    до -30°C.</p>
+            </div>
+            <div class="feature-card">
+                <h3 data-i18n="feat_3_title">Жаропрочность</h3>
+                <p data-i18n="feat_3_desc">Устойчива к перепадам в диапазоне от +15 до +150°C. Подходит для облицовки
+                    каминов.</p>
+            </div>
+            <div class="feature-card">
+                <h3 data-i18n="feat_4_title">Устойчивость</h3>
+                <p data-i18n="feat_4_desc">Цвета не выгорают под воздействием ультрафиолета. Стойкость к агрессивным
+                    химическим веществам.</p>
+            </div>
+        </section>
+
+        <section id="catalog" class="catalog-section">
+            <div class="section-header">
+                <h2 data-i18n="cat_title">Коллекция мозаики</h2>
+                <p data-i18n="cat_desc">Выберите идеальную мозаику по размеру и форме чипа</p>
+            </div>
+
+            <div class="filters-container">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Все</button>
+                <button class="filter-btn" data-filter="1x1">1x1 см</button>
+                <button class="filter-btn" data-filter="2x2">2x2 / 2.5x2.5 см</button>
+                <button class="filter-btn" data-filter="4x4">4x4 см</button>
+                <button class="filter-btn" data-filter="glass" data-i18n="filter_glass">Стеклянная</button>
+                <button class="filter-btn" data-filter="honeycomb" data-i18n="filter_honeycomb">Соты</button>
+                <button class="filter-btn" data-filter="drop">Drop</button>
+                <button class="filter-btn" data-filter="textured" data-i18n="filter_textured">Рефленная</button>
+                <button class="filter-btn" data-filter="other" data-i18n="filter_other">Другое</button>
+            </div>
+
+            <div class="catalog-grid" id="catalog-grid">
+                <!-- Items will be injected by JS -->
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-image">
+                <img src="Завод/IMG_0691.JPG" alt="Производство Good Glass Mosaic" id="factory-img"
+                    onerror="this.src='логотип/design.png'">
+            </div>
+            <div class="about-content">
+                <h2 data-i18n="about_title">О производстве</h2>
+                <p data-i18n="about_p1_html">ООО «GOOD GLASS MOSAIC» — производитель мозаичной плитки из стекла,
+                    располагающийся в Ташкентской
+                    области. Также наша продукция под брендом <strong>PREMIUM MOSAIC</strong> представлена:<br>
+                    <a href="https://yandex.ru/maps/?pt=69.246214,41.355954&z=17" target="_blank"
+                        style="text-decoration: underline;">в нашем фирменном магазине в Ташкенте на строительном
+                        рынке Жами (номер магазина 2-20)</a>.
+                </p>
+                <p data-i18n="about_p2">Несмотря на то, что мозаика сделана из стекла, она гораздо прочнее, чем обычное
+                    стекло. Это
+                    обусловлено тем, что она проходит через печь с высокой температурой.</p>
+                <p data-i18n="about_p3">По желанию заказчика, мы можем миксовать цвета и разнообразные оттенки, тем
+                    самым воплощая в
+                    реальность самые смелые и неординарные дизайнерские идеи.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacts">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="логотип/design.png" alt="Premium Mosaic" class="footer-design-logo">
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer_contact_title">Контакты</h4>
+                <a href="tel:+998992088888">+998 99 208 88 88</a>
+                <p data-i18n="footer_address">Ташкентская область, Юкори Чирчикский район, Миям Кангли МФЙ, ул.
+                    Калдиргоч, дом 4</p>
+            </div>
+            <div class="footer-map" style="border-radius: 8px; overflow: hidden; max-width: 320px; aspect-ratio: 1;">
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?ll=69.570253%2C41.155094&z=16&pt=69.570253,41.155094,pm2rdm"
+                    width="100%" height="100%" frameborder="0" allowfullscreen="true"></iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_copy">&copy; 2026 Premium Mosaic. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <!-- Contact Options Modal -->
+    <div id="contact-modal" class="lightbox">
+        <div class="contact-modal-content">
+            <span class="contact-modal-close" id="close-contact-modal">&times;</span>
+            <h3 data-i18n="modal_title">Связаться с нами</h3>
+            <div class="contact-options">
+                <a href="tel:+998992088888" class="contact-btn phone" data-i18n="modal_phone">Позвонить по телефону</a>
+                <a href="https://t.me/PremiumMosaicUz" target="_blank" class="contact-btn telegram"
+                    data-i18n="modal_tg">Написать в Telegram</a>
+                <a href="https://wa.me/998901685554" target="_blank" class="contact-btn whatsapp"
+                    data-i18n="modal_wa">Написать в WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data and Scripts -->
+    <script src="lang.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+    <script>
+        (function () {
+            var video = document.querySelector('.image-wrapper video');
+            if (!video) return;
+
+            function scheduleLoop() {
+                if (!video.duration) return;
+                var delay = Math.max((video.duration - video.currentTime - 1) * 1000, 0);
+                clearTimeout(video._fadeTimer);
+                video._fadeTimer = setTimeout(function () {
+                    video.style.opacity = '0';
+                }, delay);
+            }
+
+            video.addEventListener('loadedmetadata', scheduleLoop);
+
+            video.addEventListener('ended', function () {
+                video.currentTime = 0;
+                video.play().catch(function () {});
+                requestAnimationFrame(function () {
+                    video.style.opacity = '1';
+                    scheduleLoop();
+                });
+            });
+
+            if (video.readyState >= 1) scheduleLoop();
+        })();
+    </script>
+</body>
+
+</html>
